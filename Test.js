@@ -4,7 +4,8 @@ const answer = document.getElementById("answer")
 function GetAnswer() {
     let check = CheckAnswer()
     if (check == true) {
-        answer.innerHTML = `${input.value} = ` + String(eval(input.value))
+        answer.innerHTML = `${input.value} = `
+        input.placeholder = String(eval(input.value))
         input.value = ''
     } else {
         answer.innerHTML = 'Error'

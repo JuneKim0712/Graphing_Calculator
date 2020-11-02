@@ -1,5 +1,9 @@
 p {
     display: table;
     margin: 0px auto 0px auto;
-    padding:5px;font-size:28px;background-color:lightgray;
+    font-size: 28px; background-color:lightgray;
+}
+
+body {
+    text-align: center;
 }
