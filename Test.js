@@ -3,13 +3,11 @@ const answer = document.getElementById("answer")
 
 function GetAnswer() {
     let check = CheckAnswer()
-    if (check == true) {
-        answer.innerHTML = `${input.value} = `
-        input.placeholder = String(eval(input.value))
-        input.value = ''
+    if (check[0] == true) {
+        answer.innerHTML = `Ans = ${input.value}`
+        input.value = String(eval(input.value))
     } else {
-        answer.innerHTML = 'Error'
-        input.value = ''
+        window.alert(`invaild charactor ${check[1]}`)
     }
 }
 
@@ -25,10 +23,10 @@ function CheckAnswer() {
             index += 1
             continue
         } else {
-            return false
+            return [false, char]
         }
     }
-    return true
+    return [true, true]
 }
 
 window.addEventListener('keydown', e => {
