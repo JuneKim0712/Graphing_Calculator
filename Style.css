@@ -15,3 +15,10 @@ input[type=text] {
     border: 2px solid lightslategray;
     border-radius: 5px;
 }
+
+button {
+    font-size: 30px;
+    color: white;
+    background-color: #1867d6;
+    height: 45px;
+}
