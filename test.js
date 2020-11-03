@@ -4,7 +4,7 @@ let plot_1 = {
     mode: 'lines'
 };
 
-for (length = plot_1.x.length-1;100000000 > length; length = plot_1.x.length-1) {
+for (length = plot_1.y[plot_1.x.length-1];1000 > length; length = plot_1.y[plot_1.x.length-1]){
 plot_1.x.push(plot_1.x[length] + 0.1);
-plot_1.y.push(plot_1.x[length] ** 2);
+plot_1.y.push(plot_1.x[plot_1.x.le] ** 2);
 };
