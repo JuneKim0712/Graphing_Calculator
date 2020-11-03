@@ -1,5 +1,8 @@
 # JS_TEST_LAB
-Testing Javascript things on here
+This repo is for Learning, practicing and testing stuff.
 
 ## Basic_Canculator
-   - Learned, tested and practiced thighd, sucha as input box, botton, and .innerHtml.
+   - Using this Folder for Learning, practcing and testing input box, botton, and .innerHtml.
+
+## Ploty
+   - This Folder is for PRacticing Ploty
