@@ -16,6 +16,7 @@ function f() {
     
     if (check[0] == false) {
         window.alert(`invaild charactor ${check[1]}`);
+        return
     };
 
     let value = input.value;
@@ -29,7 +30,7 @@ function f() {
 };
 
 function CheckAnswer() {
-    const checklist = ['y', ' ', '0', '1', '2', '3', '4', 
+    const checklist = ['x', ' ', '0', '1', '2', '3', '4', 
     '5', '6', '7', '8', '9', '/', '.', '%', 
     '+', '[', ']', '(', ')', '*'];
 
