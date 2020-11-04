@@ -1,19 +1,28 @@
-function fx() {
-    let plot_1 = {
-        x: [0],
-        y: [0],
-        mode: 'lines'
-    };    
-    for (i=100000;i > plot_1.y[plot_1.x.length-1];) {
-    plot_1.x.push(plot_1.x[plot_1.x.length-1] + 0.1);
-    plot_1.y.push(plot_1.x[plot_1.x.length-1] ** 2);
-    };
-    return [plot_1]
-};
 var layout = {
     yaxis: {
       scaleanchor: "x"
     }
 }
 
-Plotly.newPlot('plot', fx(), layout);
+const input = document.getElementById('input')
+
+function f() {
+    let plot_1 = {
+        x: [0],
+        y: [0],
+        mode: 'lines'
+    };
+    let value = input.value
+    let x = -10.01
+    while (9.99 > x) {
+    plot_1.x.push(x += 0.01);
+    plot_1.y.push(eval(value));
+    };
+    return Plotly.newPlot('plot', [plot_1], layout);
+};
+
+window.addEventListener('keydown', e => {if (e.key == 'Enter') {
+    f()
+} else {
+    return
+}})
