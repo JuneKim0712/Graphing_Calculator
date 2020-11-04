@@ -26,3 +26,4 @@ window.addEventListener('keydown', e => {if (e.key == 'Enter') {
 } else {
     return
 }})
+f()
