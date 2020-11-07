@@ -5,6 +5,11 @@ var layout = {
 };
 
 const input = document.getElementById('input');
+const cos = num => {return Math.cos(num)}
+const tan = num => {return Math.tan(num)}
+const sin = num => {return Math.sin(num)}
+const e = Math.E
+const pi = Math.PI 
 
 function f() {
     const check = CheckAnswer();
@@ -16,7 +21,7 @@ function f() {
     
     if (check[0] == false) {
         window.alert(`invaild charactor ${check[1]}`);
-        return
+        return;
     };
 
     let value = input.value;
@@ -34,19 +39,19 @@ function CheckAnswer() {
     '5', '6', '7', '8', '9', '/', '.', '%', 
     '+', '[', ']', '(', ')', '*'];
 
-    let leninput = input.value.length
-    let index = 0
+    let leninput = input.value.length;
+    let index = 0;
 
     while (leninput > index) {
         let char = input.value[index];
         if (checklist.includes(char)) {
             index += 1;
-            continue
+            continue;
         } else {
             return [false, char];
         };
     };
-    return [true, true]
+    return [true, true];
 };
 
 window.addEventListener('keydown', e => {
