@@ -25,17 +25,17 @@ function f() {
     };
 
     let value = input.value;
-    let x = -10;
+    let x = -100.01;
 
-    while (9.99 > x) {
+    while (100 > x) {
+        plot_1.x.push(x += 0.001);
         plot_1.y.push(eval(value));
-        plot_1.x.push(x += 0.01);
     };
     return Plotly.newPlot('plot', [plot_1], layout);
 };
 
 function CheckAnswer() {
-    const checklist = ['x', ' ', '0', '1', '2', '3', '4', 
+    const checklist = ['x', 'c','o', 's', 't', 'a', 'n', 'i', 'e', 'p', '-', ' ', '0', '1', '2', '3', '4', 
     '5', '6', '7', '8', '9', '/', '.', '%', 
     '+', '[', ']', '(', ')', '*'];
 

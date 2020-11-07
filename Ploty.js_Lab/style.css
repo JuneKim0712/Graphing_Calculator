@@ -1,4 +1,16 @@
+body {
+    font-size: 25px;
+}
+
 .js-plotly-plot {
-    width: 100%;
+    width: 100vh;
     height: 100vh;
+}
+
+input {
+    width: 47%;
+    height: 35px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
