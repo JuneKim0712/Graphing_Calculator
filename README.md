@@ -5,4 +5,4 @@ This repo is for Learning, practicing and testing stuff.
    - Using this Folder for Learning, practcing and testing input box, botton, and .innerHtml.
 
 ## Ploty
-   - This Folder is for PRacticing Ploty
+   - This Folder is for Practicing Ploty
