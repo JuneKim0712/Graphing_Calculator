@@ -5,9 +5,9 @@ var layout = {
 };
 
 const input = document.getElementById('input');
-const cos = num => {return Math.cos(num)}
-const tan = num => {return Math.tan(num)}
-const sin = num => {return Math.sin(num)}
+const cos = num => {return Math.cos(num)};
+const tan = num => {return Math.tan(num)};
+const sin = num => {return Math.sin(num)};
 const e = Math.E
 const pi = Math.PI 
 
@@ -54,7 +54,6 @@ function CheckAnswer() {
     return [true, true];
 };
 
-window.addEventListener('keydown', e => {
-    if (e.key == 'Enter' && input.value != '') {f();} else {return};});
+window.addEventListener('keydown', e => e.key == 'Enter' && input.value != '' ? f() : false);
 
 Plotly.newPlot('plot', [{x: 0, y: 0}], layout);
